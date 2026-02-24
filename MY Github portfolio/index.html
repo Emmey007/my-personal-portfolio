@@ -39,7 +39,7 @@ background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='htt
 pointer-events:none; z-index:9999; opacity:.55;
 }
 
-/* ══════════ NAVBAR ══════════ */
+
 nav {
 position: fixed;
 top: 14px;
@@ -143,7 +143,7 @@ transition: all .3s;
 .nav-hamburger.open span:nth-child(2) { opacity: 0; }
 .nav-hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-/* Mobile nav dropdown */
+
 .mobile-nav {
 display: none;
 position: fixed;
@@ -170,7 +170,7 @@ transition: color .2s, background .2s;
 }
 .mobile-nav a:hover { color: var(--gold); background: rgba(232,192,112,.05); }
 
-/* ══════════ HERO ══════════ */
+
 .hero {
 min-height:100vh;
 display:flex; align-items:center; justify-content:center;
@@ -277,7 +277,7 @@ color:var(--gold-light);line-height:1.1;margin-bottom:22px;
 .divider::before,.divider::after { content:'';flex:1;height:1px;background:var(--gold-dim);opacity:.35; }
 .divider-diamond { width:7px;height:7px;background:var(--gold-dim);transform:rotate(45deg);opacity:.55; }
 
-/* ══════════ ABOUT ══════════ */
+
 #about {
 background:linear-gradient(140deg, var(--bg-surface) 0%, var(--bg) 100%);
 position:relative;overflow:hidden;
@@ -309,7 +309,7 @@ gap: 48px;
 
 .about-photo-col { position: relative; }
 
-/* ── PHOTO FRAME ── */
+
 .about-photo-wrap {
   width: 100%;
   max-width: 340px;
@@ -323,7 +323,7 @@ gap: 48px;
   background: var(--bg-card);
 }
 
-/* The actual photo — THIS is the fix */
+
 .about-photo-wrap img {
   display: block;
   width: 100%;
@@ -381,7 +381,7 @@ transition:all .3s;
 .stat-num { font-family:'Playfair Display',serif;font-size:clamp(1.4rem,4vw,2.1rem);color:var(--gold);display:block; }
 .stat-label { font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted); }
 
-/* ══════════ SKILLS ══════════ */
+
 #skills { background:var(--bg);position:relative;overflow:hidden; }
 #skills::before { content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 55% at 85% 50%,rgba(193,125,60,.08) 0%,transparent 60%); }
 
@@ -426,7 +426,7 @@ background:rgba(232,192,112,.15);transition:background .3s;
 .skill-bar-track { height:3px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden; }
 .skill-bar-fill { height:100%;border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--warm));width:0%;transition:width 1.2s cubic-bezier(.25,1,.5,1); }
 
-/* ══════════ PROJECTS ══════════ */
+
 #projects { background:var(--bg-surface); }
 .projects-inner { max-width:1080px;margin:0 auto; }
 .projects-grid {
@@ -462,7 +462,7 @@ transition:all .4s;cursor:pointer;
 .project-title { font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--gold-light);margin-bottom:8px; }
 .project-desc { font-size:.84rem;color:var(--text-body);line-height:1.75;opacity:.75; }
 
-/* ══════════ CONTACT ══════════ */
+
 #contact { background:linear-gradient(145deg,#0C0805 0%,var(--bg) 100%);text-align:center;position:relative;overflow:hidden; }
 #contact::before { content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 50% 110%,rgba(193,125,60,.1) 0%,transparent 55%); }
 
@@ -479,7 +479,7 @@ background:rgba(232,192,112,.04);border:1px solid rgba(232,192,112,.15);
 border-radius:6px;padding:12px 14px;
 color:var(--gold);font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;
 transition:border-color .3s,background .3s;
--webkit-appearance: none;
+
 }
 .form-group input:focus,.form-group textarea:focus { border-color:rgba(232,192,112,.5);background:rgba(232,192,112,.07); }
 .form-group textarea { resize:vertical;min-height:120px; }
@@ -490,7 +490,6 @@ border:none;padding:15px 40px;border-radius:6px;
 font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:700;
 letter-spacing:.16em;text-transform:uppercase;cursor:pointer;
 transition:all .3s;align-self:flex-start;
--webkit-appearance: none;
 }
 .btn-submit:hover { transform:translateY(-3px);box-shadow:0 10px 28px rgba(232,192,112,.35); }
 
@@ -498,12 +497,12 @@ transition:all .3s;align-self:flex-start;
   .btn-submit { width:100%; }
 }
 
-/* ══════════ FOOTER ══════════ */
+
 footer { background:#060402;padding:30px 24px;text-align:center;border-top:1px solid rgba(232,192,112,.08); }
 footer p { font-size:.73rem;color:var(--text-muted);letter-spacing:.08em; }
 footer span { color:var(--gold); }
 
-/* ══════════ SCROLL REVEAL ══════════ */
+
 .reveal { opacity:0;transform:translateY(38px);transition:opacity .8s cubic-bezier(.25,1,.5,1),transform .8s cubic-bezier(.25,1,.5,1); }
 .reveal.revealed { opacity:1;transform:translateY(0); }
 .reveal-left { opacity:0;transform:translateX(-48px);transition:opacity .9s cubic-bezier(.25,1,.5,1),transform .9s cubic-bezier(.25,1,.5,1); }
@@ -523,7 +522,7 @@ transition:left .12s,top .12s;
 
 @media(hover:none){ .cursor-glow { display:none; } }
 
-/* Ensure about section uses max-width on desktop */
+
 #about > .about-inner,
 #skills > .skills-inner,
 #projects > .projects-inner,
@@ -539,11 +538,11 @@ transition:left .12s,top .12s;
 
 <div class="cursor-glow" id="cursorGlow"></div>
 
-<!-- ═══ NAVBAR ═══ -->
+
 <nav>
   <a href="#" class="nav-logo">Portfolio.</a>
 
-  <!-- Desktop links -->
+ 
   <ul class="nav-links" id="navLinks">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -551,13 +550,13 @@ transition:left .12s,top .12s;
     <li><a href="#contact">Contact</a></li>
   </ul>
 
-  <!-- Hamburger (mobile only) -->
+ 
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- Mobile dropdown -->
+
 <div class="mobile-nav" id="mobileNav">
   <a href="#about" class="mobile-link">About</a>
   <a href="#skills" class="mobile-link">Skills</a>
@@ -565,15 +564,14 @@ transition:left .12s,top .12s;
   <a href="#contact" class="mobile-link">Contact</a>
 </div>
 
-<!-- ═══ HERO ═══ -->
 <section class="hero" id="home">
 <div class="hero-bg"></div>
 <div class="hero-rings"><span></span><span></span><span></span></div>
 <div class="hero-content">
   <span class="hero-eyebrow">✦ Creative Developer &amp; Designer ✦</span>
-  <h1 class="hero-title">Crafting Digital <em>Experiences</em></h1>
+  <h1 class="hero-title">AKINWALE <em>MAYOWA</em></h1>
   <p class="hero-sub">Turning ideas into beautifully functional web experiences with passion and precision.</p>
-  <a href="#projects" class="hero-cta"><span>View My Work</span><span>→</span></a>
+  <a href="#projects" class="hero-cta"><span> Kindly View My Work</span><span>→</span></a>
 </div>
 <div class="scroll-ind">
   <span>Scroll</span>
@@ -581,11 +579,11 @@ transition:left .12s,top .12s;
 </div>
 </section>
 
-<!-- ═══ ABOUT ═══ -->
+
 <section id="about">
   <div class="about-inner">
 
-    <!-- Photo column -->
+    
     <div class="about-photo-col reveal-left">
       <div class="about-photo-wrap">
         <img src="./IMG_0195.png" alt="Your Name"
@@ -603,9 +601,8 @@ transition:left .12s,top .12s;
     <!-- Text column -->
     <div class="about-text reveal-right">
       <span class="section-label">— Who I Am</span>
-      <h2 class="section-title">A developer with an eye for <em>beauty</em></h2>
-      <p>I create rich, immersive web experiences that blend clean code with thoughtful design. Every pixel, every interaction, every line of code is crafted with care and intentionality.</p>
-      <p>My passion lives at the intersection of technology and art — where logic meets aesthetics, and where digital products truly come alive.</p>
+      <h2 class="section-title">I build websites that look great and work well. I pay close attention to the details — how things look, how they feel to use, and how they're built under the hood.</p>
+      <p>I love that sweet spot where tech and creativity meet — where you're not just building something functional, but something that actually looks and feels alive.</p>
       <div class="about-stats">
         <div class="stat reveal d1"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
         <div class="stat reveal d2"><span class="stat-num">10+</span><span class="stat-label">Clients</span></div>
@@ -695,7 +692,6 @@ transition:left .12s,top .12s;
 </div>
 </section>
 
-<!-- ═══ CONTACT ═══ -->
 <section id="contact">
 <div class="contact-inner">
 <span class="section-label reveal">— Get In Touch</span>
@@ -714,13 +710,12 @@ transition:left .12s,top .12s;
 </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
+
 <footer>
 <p>Crafted with <span>♥</span> using HTML5, CSS3 &amp; JavaScript — <span>© 2025</span></p>
 </footer>
 
 <script>
-/* Cursor glow — desktop only */
 const glow = document.getElementById('cursorGlow');
 if(window.matchMedia('(hover:hover)').matches){
   document.addEventListener('mousemove', e => {
@@ -729,7 +724,6 @@ if(window.matchMedia('(hover:hover)').matches){
   });
 }
 
-/* Hamburger menu */
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobileNav');
 const navLinks = document.getElementById('navLinks');
@@ -739,7 +733,7 @@ hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('open');
 });
 
-/* Close mobile nav on link click */
+
 document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('open');
@@ -747,7 +741,7 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   });
 });
 
-/* Hide/show hamburger vs desktop links based on breakpoint */
+
 function checkNav(){
   if(window.innerWidth < 640){
     navLinks.style.display = 'none';
@@ -762,14 +756,14 @@ function checkNav(){
 checkNav();
 window.addEventListener('resize', checkNav);
 
-/* Scroll reveal */
+
 const revEls = document.querySelectorAll('.reveal,.reveal-left,.reveal-right');
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('revealed'); });
 }, { threshold:.1, rootMargin:'0px 0px -40px 0px' });
 revEls.forEach(el => obs.observe(el));
 
-/* Skills */
+
 const skillObs = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(!entry.isIntersecting) return;
@@ -794,7 +788,6 @@ const skillObs = new IntersectionObserver(entries => {
 },{ threshold:.3 });
 document.querySelectorAll('.skill-card').forEach(c=>skillObs.observe(c));
 
-/* Navbar shadow on scroll */
 const nav=document.querySelector('nav');
 window.addEventListener('scroll',()=>{
   nav.style.boxShadow = window.scrollY>60
@@ -802,7 +795,6 @@ window.addEventListener('scroll',()=>{
     : '0 0 0 1px rgba(232,192,112,.06),0 8px 32px rgba(0,0,0,.55),inset 0 -1px 0 rgba(0,0,0,.5)';
 });
 
-/* Parallax rings */
 const rings=document.querySelectorAll('.hero-rings span');
 window.addEventListener('scroll',()=>{
   const y=window.scrollY;
@@ -811,7 +803,6 @@ window.addEventListener('scroll',()=>{
   if(rings[2]) rings[2].style.transform=`translateY(${y*.07}px)`;
 });
 
-/* Stat counters */
 function animCounter(el,target,suffix){
   let start=0;const dur=1400;
   const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);el.textContent=Math.floor(p*target)+suffix;if(p<1)requestAnimationFrame(step);};
